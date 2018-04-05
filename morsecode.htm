@@ -1,0 +1,35 @@
+<html>
+<head>https://github.com/haydo-maydo/jsfun
+  <title>Morse Code Encoder</title>
+ </head>
+ <body>
+  <script>
+  
+  //Input and Outputs
+  var inpt = document.form.inp.value;   // Input value
+  var outpt = document.form.outp.value;   // Final Output
+  
+  //Arrays
+  var array1 = ["a", "b", "c"];   // Array with alphabet
+  var array2 = [".-", "-...", "-.-."];   // Array with morse code alphabet
+  var array3 = [inpt.charAt(0), inpt.charAt(1), inpt.charAt(2)];   // Array with input value positions
+  
+  //Array Lengths
+  var array1l = array1.length;   // Length of array 1
+  var array2l = array2.length;   // Length of array 2
+  var array3l = array3.length;   // Length of array 3
+  
+   morseCode() {
+    // if anything in array 3 has the first value of array1, (or if input value is "a") 
+    // If it does, it creates a new array with the first value of array2 instead of the values in array3
+    // Repeats process for all array1 values
+   }
+  
+  </script>
+ <h1>Morse Code Encoder</h1>
+  <form name="form" action="">
+    <input type="text" name="inp"><br>
+    <input type="text" name="outp"><br>
+    <input type="button" name="Submit" value="Submit" onclick="morseCode()">
+ </body>
+</html>
